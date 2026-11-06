@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Altun Parfüm — Premium ətirlər</title>
+<meta name="description" content="Altun Parfüm: seçilmiş premium ətirlər, WhatsApp ilə sürətli sifariş və oyunla endirim kodu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0a10;--panel:#15121a;--ink:#efe7d8;--muted:#a1978a;--gold:#d8b36a;--gold2:#f3dca3;--wine:#3a1020;--line:#2b2430}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:300 17px/1.7 Jost,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bodoni Moda",Georgia,serif;font-weight:400;line-height:1.1}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+[hidden]{display:none!important}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+header{position:fixed;inset:0 0 auto;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:linear-gradient(#0c0a10e6,#0c0a1000);backdrop-filter:blur(5px)}
+.logo{font:400 25px "Bodoni Moda",serif}
+.logo i{color:var(--gold);font-size:14px;margin-left:6px}
+nav{display:flex;align-items:center;gap:26px;font-size:15px;color:var(--muted)}
+nav a:hover{color:var(--gold2)}
+.btn{display:inline-block;padding:13px 30px;border:1px solid var(--gold);color:var(--gold2);font:400 16px Jost,sans-serif;letter-spacing:.04em;background:none;cursor:pointer;transition:box-shadow .3s,background .3s}
+.btn:hover{box-shadow:0 0 30px #d8b36a55}
+.btn.fill{background:var(--gold);color:#17110a;font-weight:500}
+.btn.sm{padding:8px 18px;font-size:14px}
+.hero{position:relative;min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:10px;padding:110px max(22px,calc((100vw - 1100px)/2)) 50px;background:linear-gradient(100deg,#0c0a10f2 15%,#0c0a1099),url(hero.jpg) center/cover,radial-gradient(circle at 75% 40%,var(--wine),var(--bg) 65%)}
+#fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero>*:not(canvas){position:relative}
+.hero h1{font-size:clamp(46px,8vw,96px);letter-spacing:-.015em;background:linear-gradient(110deg,var(--ink) 30%,var(--gold2) 50%,var(--ink) 70%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 6s linear infinite}
+@keyframes sheen{to{background-position:-250% 0}}
+.hero p{max-width:40ch;color:var(--muted);margin:24px 0 34px;font-size:19px}
+.hero .btn+.btn{margin-left:10px}
+.hb{display:grid;place-items:center}
+.hb svg{width:min(300px,70vw);filter:drop-shadow(0 30px 50px #d8b36a38);animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-16px) rotate(1.5deg)}}
+.liq{animation:rise 5s ease-in-out infinite alternate}
+@keyframes rise{from{transform:translateY(10px)}to{transform:translateY(-6px)}}
+.strip{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap;padding:16px 0;color:var(--gold);font:italic 400 22px "Bodoni Moda",serif}
+.strip div{display:inline-block;animation:mq 30s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:96px 0}
+h2{font-size:clamp(34px,5vw,56px);margin-bottom:12px}
+.sub{color:var(--muted);max-width:52ch;margin-bottom:34px}
+.tabs{display:flex;gap:26px;flex-wrap:wrap;margin-bottom:32px;border-bottom:1px solid var(--line)}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--muted);padding:0 4px 10px;font:400 17px Jost,sans-serif;cursor:pointer}
+.tabs button[aria-pressed=true]{color:var(--gold2);border-color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;transition:border-color .3s}
+.card:hover{border-color:var(--gold)}
+.ped{height:260px;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 90%,#d8b36a2e,transparent 70%)}
+.ped svg{width:120px}
+.info{padding:20px 24px 24px}
+.info h3{font-size:26px}
+.info p{color:var(--muted);font-size:15px}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+.price{font:400 23px "Bodoni Moda",serif;color:var(--gold2)}
+.row a{border-bottom:1px solid var(--gold);color:var(--gold2)}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.feat h3{font-size:26px;margin-bottom:8px;color:var(--gold2)}
+.feat p{color:var(--muted)}
+#oyun{background:radial-gradient(600px circle at 15% 0,var(--wine),transparent 70%),var(--panel);border-block:1px solid var(--line)}
+.gbox{display:flex;flex-direction:column;align-items:center;gap:16px}
+#g1{width:100%;max-width:360px;touch-action:none;background:#0c0a10;border:1px solid var(--gold);border-radius:8px}
+.mem{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:100%;max-width:360px}
+.mc{aspect-ratio:1;position:relative;border:1px solid var(--gold);background:#0c0a10;border-radius:8px;cursor:pointer;perspective:600px;color:var(--gold)}
+.mc i,.mc b{position:absolute;inset:0;display:grid;place-items:center;font-style:normal;font-size:30px;backface-visibility:hidden;transition:transform .5s}
+.mc b{transform:rotateY(180deg);background:#1d1724;border-radius:8px}
+.mc.on i{transform:rotateY(180deg)}
+.mc.on b{transform:none}
+.res{text-align:center;min-height:30px;color:var(--gold2)}
+.res b{font:500 22px "Bodoni Moda",serif;margin:0 8px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about p{color:var(--muted);margin-bottom:16px}
+.cta{text-align:center;padding:90px 20px;border:1px solid var(--line);background:radial-gradient(520px circle at 50% 0,#d8b36a24,transparent 70%)}
+.cta p{color:var(--muted);margin:12px auto 30px;max-width:46ch}
+footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:30px 22px;max-width:1100px;margin:0 auto;color:var(--muted);font-size:15px}
+.wa{position:fixed;right:18px;bottom:18px;z-index:30;background:#25d366;color:#06220f;font-weight:500;padding:12px 20px;border-radius:40px;box-shadow:0 8px 30px #0008}
+@media(max-width:760px){.hero,.about,.feat{grid-template-columns:1fr}.hb{order:-1}.hero{padding-top:90px}nav a:not(.btn){display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#">Altun<i>Parfüm</i></a>
+  <nav><a href="#kolleksiya">Kolleksiya</a><a href="#oyun">Oyun zonası</a><a href="#haqqimizda">Haqqımızda</a><a class="btn sm" data-wa="Salam! Altun Parfüm haqqında məlumat almaq istəyirəm" target="_blank" rel="noopener">WhatsApp</a></nav>
+</header>
+
+<main>
+<div class="hero">
+  <canvas id="fx"></canvas>
+  <div>
+    <h1>Qoxu ilə yadda qal</h1>
+    <p>Altun Parfüm seçilmiş ətirləri bir yerə toplayır. Sizə uyğun qoxunu tapın və bir mesajla sifariş edin.</p>
+    <a class="btn fill" href="#kolleksiya">Kolleksiyaya bax</a><a class="btn" href="#oyun">Oyna, endirim qazan</a>
+  </div>
+  <div class="hb" id="hb"></div>
+</div>
+
+<div class="strip"><div id="mq"></div></div>
+
+<section id="kolleksiya"><div class="wrap">
+  <h2>Kolleksiya</h2>
+  <p class="sub">Hər ətir ilk 30 dəqiqədə açılan başlanğıc notlarla, günün sonunda qalan baza notlarla seçilib.</p>
+  <div class="tabs" id="ft"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section style="border-top:1px solid var(--line)"><div class="wrap feat">
+  <div><h3>Orijinal məhsul</h3><p>Hər ətir qablaşdırılmış və möhürlənmiş halda təqdim olunur.</p></div>
+  <div><h3>Sürətli çatdırılma</h3><p>Sifarişi WhatsApp-da yazın, ünvanı razılaşdırın, qapınıza gətirək.</p></div>
+  <div><h3>Hədiyyə qutusu</h3><p>Bayram və ad günü üçün xüsusi qablaşdırma və kart əlavə edirik.</p></div>
+</div></section>
+
+<section id="oyun"><div class="wrap">
+  <h2>Oyun zonası</h2>
+  <p class="sub">İki oyundan birini qazanın və sifarişinizə 10% endirim kodu əldə edin.</p>
+  <div class="tabs" id="gt"><button aria-pressed="true" data-g="1">Ətir damcısı</button><button aria-pressed="false" data-g="2">Qoxu yaddaşı</button></div>
+  <div class="gbox" id="game1">
+    <p class="sub" style="margin:0;text-align:center">30 saniyədə 12 qızılı damcı tutun. Şüşəni barmağınızla sürüşdürün. Boz damcılardan qaçın.</p>
+    <canvas id="g1" width="360" height="480"></canvas>
+    <button class="btn fill" id="b1">Oyuna başla</button>
+    <p class="res" id="s1"></p>
+  </div>
+  <div class="gbox" id="game2" hidden>
+    <p class="sub" style="margin:0;text-align:center">Eyni qoxu notlarını tapıb cütləri birləşdirin.</p>
+    <div class="mem" id="g2"></div>
+    <button class="btn fill" id="b2">Yenidən qarışdır</button>
+    <p class="res" id="s2"></p>
+  </div>
+</div></section>
+
+<section id="haqqimizda"><div class="wrap about">
+  <div><h2>Niyə Altun Parfüm</h2></div>
+  <div>
+    <p>Ətir paltarın görünməyən son detalıdır. Biz hər qoxunu sınaqdan keçirib kolleksiyaya salırıq ki, siz seçərkən çaşmayasınız.</p>
+    <p>Hansı ətri seçəcəyinizi bilmirsinizsə, WhatsApp-da yazın. Zövqünüzü və büdcənizi deyin, uyğun variantları təklif edək.</p>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="cta">
+  <h2>Ətrinizi seçək</h2>
+  <p>Mesaj yazın, bir neçə dəqiqəyə cavab verək.</p>
+  <a class="btn fill" data-wa="Salam! Mənə ətir seçməkdə kömək edin" target="_blank" rel="noopener">WhatsApp-da yaz</a>
+</div></div></section>
+</main>
+
+<footer><span>© 2026 Altun Parfüm</span><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></footer>
+<a class="wa" data-wa="Salam! Altun Parfüm saytından yazıram" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+/* ===== DƏYİŞDİRİN: WhatsApp nömrəsi (+ və boşluqsuz, ölkə kodu ilə) ===== */
+const WA="994500000000";
+const CODE="ALTUN10";
+const $=s=>document.querySelector(s);
+const wa=t=>`https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+const setWA=()=>document.querySelectorAll("[data-wa]").forEach(a=>a.href=wa(a.dataset.wa));
+
+/* şüşə şəkli */
+const bt=(h=0,liq=0)=>`<svg viewBox="0 0 100 150" style="filter:hue-rotate(${h}deg)"><defs><linearGradient id="g${h}${liq}" x1="0" x2="1"><stop offset="0" stop-color="#8a6a2b"/><stop offset=".5" stop-color="#f3dca3"/><stop offset="1" stop-color="#8a6a2b"/></linearGradient><clipPath id="c${h}${liq}"><rect x="15" y="39" width="70" height="102" rx="13"/></clipPath></defs><rect x="38" y="6" width="24" height="22" rx="3" fill="url(#g${h}${liq})"/><rect x="44" y="28" width="12" height="10" fill="#d8b36a"/><rect x="14" y="38" width="72" height="104" rx="14" fill="#1a1620" stroke="url(#g${h}${liq})" stroke-width="2"/>${liq?`<g clip-path="url(#c${h}${liq})"><g class="liq"><rect x="10" y="85" width="80" height="60" fill="#d8b36a" opacity=".35"/><path d="M10 85q15-8 30 0t30 0t20 0" fill="none" stroke="#f3dca3" opacity=".7"/></g></g>`:""}<rect x="26" y="68" width="48" height="40" rx="3" fill="none" stroke="#d8b36a" stroke-opacity=".6"/><text x="50" y="92" text-anchor="middle" font-size="10" fill="#f3dca3" font-family="serif">ALTUN</text></svg>`;
+$("#hb").innerHTML=bt(0,1);
+
+/* sətir */
+const words=["Oud","Gül","Ənbər","Vanil","Sandal","Zəfəran","Müşk","Sedr"];
+$("#mq").textContent=(words.join("  •  ")+"  •  ").repeat(8);
+
+/* kolleksiya (ad, kateqoriya, notlar, qiymət AZN, rəng) */
+const P=[["Altun Oud","Unisex","Oud, ənbər, vanil",189,0],["Qara Gül","Qadın","Qara gül, paçuli, müşk",165,-20],["Xəzər Mavisi","Kişi","Bergamot, dəniz duzu, sedr",149,200],["Səhər Çiçəyi","Qadın","Yasəmən, armud, ağ müşk",139,20],["Gecə Ambəri","Kişi","Tütün, ənbər, dəri",175,-35],["Zəfəran Işığı","Unisex","Zəfəran, gül, sandal",199,10]];
+const cats=["Hamısı","Qadın","Kişi","Unisex"];
+function show(c){
+  $("#ft").innerHTML=cats.map(x=>`<button aria-pressed="${x==c}" data-c="${x}">${x}</button>`).join("");
+  $("#grid").innerHTML=P.filter(p=>c=="Hamısı"||p[1]==c).map(p=>`<article class="card"><div class="ped">${bt(p[4])}</div><div class="info"><h3>${p[0]}</h3><p>${p[2]}</p><div class="row"><span class="price">${p[3]} ₼</span><a href="${wa("Salam! "+p[0]+" ətirini sifariş etmək istəyirəm")}" target="_blank" rel="noopener">Sifariş et</a></div></div></article>`).join("");
+}
+$("#ft").onclick=e=>{if(e.target.dataset.c)show(e.target.dataset.c)};
+show("Hamısı");
+
+/* hero zərrəcikləri */
+const f=$("#fx"),c=f.getContext("2d");let W,H;const pt=[];
+function rs(){W=f.width=f.offsetWidth;H=f.height=f.offsetHeight}
+rs();addEventListener("resize",rs);
+for(let i=0;i<55;i++)pt.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*2+.4,v:Math.random()*.4+.1});
+(function a(){c.clearRect(0,0,W,H);c.fillStyle="rgba(243,220,163,.5)";
+  pt.forEach(p=>{p.y-=p.v;if(p.y<0){p.y=H;p.x=Math.random()*W}c.beginPath();c.arc(p.x,p.y,p.r,0,7);c.fill()});
+  requestAnimationFrame(a)})();
+
+/* oyun tabları */
+$("#gt").onclick=e=>{const g=e.target.dataset.g;if(!g)return;
+  document.querySelectorAll("#gt button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.g==g));
+  $("#game1").hidden=g!="1";$("#game2").hidden=g!="2";run=0;if(g=="2")start2()};
+
+const prize=m=>`${m} Kodunuz: <b>${CODE}</b><a class="btn sm" href="${wa("Salam! Oyunda qazandım. Endirim kodum: "+CODE)}" target="_blank" rel="noopener">Endirimi götür</a>`;
+
+/* oyun 1: damcı tutmaq */
+const cv=$("#g1"),cx=cv.getContext("2d");let run=0,sc=0,t=0,px=180,ds=[],last=0;
+cv.addEventListener("pointermove",e=>{const r=cv.getBoundingClientRect();px=Math.min(330,Math.max(30,(e.clientX-r.left)*360/r.width))});
+function draw(){cx.clearRect(0,0,360,480);
+  ds.forEach(d=>{cx.beginPath();cx.fillStyle=d.b?"#6f685d":"#f3dca3";cx.arc(d.x,d.y,d.b?9:8,0,7);cx.fill()});
+  cx.fillStyle="#d8b36a";cx.fillRect(px-26,445,52,30);cx.fillRect(px-8,432,16,13);
+  cx.fillStyle="#efe7d8";cx.font="16px Jost";cx.fillText("Xal: "+sc+"   Vaxt: "+Math.max(0,t|0),10,24)}
+function loop(n){if(!run)return;const dt=Math.min(.05,(n-last)/1000);last=n;t-=dt;
+  if(Math.random()<dt*2.4)ds.push({x:20+Math.random()*320,y:-10,v:120+Math.random()*110,b:Math.random()<.25});
+  ds.forEach(d=>{d.y+=d.v*dt;if(d.y>435&&d.y<470&&Math.abs(d.x-px)<34){sc+=d.b?-2:1;d.y=999}});
+  ds=ds.filter(d=>d.y<480);draw();
+  if(t<=0){run=0;$("#b1").textContent="Yenidən oyna";$("#s1").innerHTML=sc>=12?prize("Təbriklər! "+sc+" xal topladınız."):sc+" xal. Kod üçün 12 xal lazımdır, yenidən cəhd edin.";return}
+  requestAnimationFrame(loop)}
+$("#b1").onclick=()=>{sc=0;t=30;ds=[];run=1;$("#s1").textContent="";last=performance.now();requestAnimationFrame(loop)};
+draw();
+
+/* oyun 2: yaddaş */
+const E=["🌹","🍋","🌿","🔥","🌊","🍯","🪵","✨"];let A=null,lock=0,mv=0,ok=0;
+function start2(){const g=$("#g2");g.innerHTML="";mv=ok=0;A=null;lock=0;$("#s2").textContent="";
+  [...E,...E].sort(()=>Math.random()-.5).forEach(e=>{const b=document.createElement("button");b.className="mc";b.setAttribute("aria-label","Kart");b.innerHTML=`<i>?</i><b>${e}</b>`;b.onclick=()=>flip(b,e);g.append(b)})}
+function flip(b,e){if(lock||b.classList.contains("on"))return;b.classList.add("on");
+  if(!A){A=[b,e];return}
+  mv++;
+  if(A[1]===e){A=null;if(++ok==8)$("#s2").innerHTML=prize("Əla! "+mv+" gedişdə tamamladınız.")}
+  else{lock=1;const p=A[0];A=null;setTimeout(()=>{p.classList.remove("on");b.classList.remove("on");lock=0},700)}}
+$("#b2").onclick=start2;
+
+setWA();
+</script>
+</body>
+</html>
